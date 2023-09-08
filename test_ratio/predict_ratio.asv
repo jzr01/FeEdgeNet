@@ -1,0 +1,5 @@
+close all;
+for i = 1:length(test_data)
+    test_data(i).CNN_1_million = 1 - predict(net,test_data(i).data);
+end
+
